@@ -1,0 +1,35 @@
+html {
+    max-height: 100vh;
+}
+
+body {
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+}
+
+#gameContainer {
+    width: 960px;
+    height: 960px;
+    max-height: 960px;
+    background-color: whitesmoke;
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+#setGrid {
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    top: 200px;
+    left: 15px;
+}
+
+#changeDim {
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    top: 265px;
+    left: 15px;
+}
