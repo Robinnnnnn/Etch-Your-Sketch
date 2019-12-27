@@ -28,4 +28,16 @@ function assignDim() {
     createGrids(size);
 }
 
-// gridSizeBtn.onclick(window.prompt("Dimensions of Grid"));
+//on hover find the id of the div and changes the bacground color to black
+let color = "rgb(0, 0, 0)";
+let squares = document.getElementsByClassName("grids");
+
+function colorGrid(color) {
+    for (let i = 0; i < squares.length; i++) {
+        squares[i].addEventListener("mouseover", function(event) {
+            let chosenSquare = event.target.getAttribute("id");
+            let chosenSquare1 = document.getElementById(`#${chosenSquare}`);
+            chosenSquare1.setAttribute(`background-color: ${color} `);
+        });
+    }
+}
