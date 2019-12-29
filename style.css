@@ -33,3 +33,11 @@ body {
     top: 265px;
     left: 15px;
 }
+
+#clearGrid {
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    top: 330px;
+    left: 15px;
+}
