@@ -1,6 +1,9 @@
 let container = document.getElementById("gameContainer");
 let gridSizeBtn = document.getElementById("changeDim");
-let color = "black";
+let colorOne = "0";
+let colorTwo = "0";
+let colorThree = "0";
+let color = `rgb(${colorOne}, ${colorTwo}, ${colorThree})`;
 let squares = document.getElementsByClassName("grids");
 let clear = document.getElementById("clearGrid");
 let size = 0;
@@ -58,4 +61,12 @@ function gridReset() {
     while (container.firstChild) {
         container.removeChild(container.firstChild);
     }
+}
+//assigns random color to pen. Works.
+function randomColor() {
+    colorOne = Math.floor(Math.random() * 255).toString();
+    colorTwo = Math.floor(Math.random() * 255).toString();
+    colorThree = Math.floor(Math.random() * 255).toString();
+
+    return (color = `rgb(${colorOne}, ${colorTwo}, ${colorThree})`);
 }

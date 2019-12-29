@@ -18,7 +18,7 @@ body {
     grid-column-start: 2;
 }
 
-#setGrid {
+#randomColor {
     width: 130px;
     height: 50px;
     position: absolute;
